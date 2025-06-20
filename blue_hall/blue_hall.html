@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gaussian Splatting Viewer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      font-family: sans-serif;
+    }
+
+    body {
+      background: url('blue_hall.png') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      display: flex;
+      gap: 40px;
+      padding: 40px;
+      background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+      border: 2px solid white;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+    }
+
+    .btn {
+      padding: 40px 60px;
+      font-size: 24px;
+      background-color: rgba(255, 255, 255, 0.85);
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background-color: rgba(255, 255, 255, 1);
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="inside/inside.html" class="btn">Inside</a>
+    <a href="outside/outside.html" class="btn">Outside</a>
+  </div>
+</body>
+</html>
